@@ -21,7 +21,7 @@
   "build": {
     "appId": "rocket-league-utils",
     "mac": {
-      "category": "todo"
+      "category": "public.app-category.games"
     }
   }
 }
