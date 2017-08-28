@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rocket League Utilities</title>
+  </head>
+  <body>
+    <p>
+      Select .replay files to generate a spreadsheet for.
+    </p>
+    <p>
+      You must have <a id="rattletrap" href="#" onclick="showRattletrap()">rattletrap</a> installed on your system, and on your shell path.
+    </p>
+
+    <!--
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    -->
+
+    <button id="openFile" onclick="openFile()">Select replays</button>
+
+    <p>
+      <span id="clipboard_confirmation" style="display: none">
+      Copied to clipboard.
+      </span>
+    </p>
+
+    <textarea id="editor" style="width: 400px; height: 300px;"></textarea>
+
+    <script>
+      const electron = require('electron')
+      const fs = require('fs')
+      const parse = require('./parse')
+
+      function showRattletrap (e) {
+        electron.shell.openExternal('https://github.com/tfausak/rattletrap/releases/latest')
+      }
+
+      function openFile () {
+        electron.remote.dialog.showOpenDialog({
+          // TODO why doesn't this work?
+          // https://github.com/electron/electron/blob/master/docs/api/dialog.md#methods
+          filters:  { name: 'Replays', extensions: ['replay'] },
+          properties: ['openFile', 'multiSelections']
+        }, function (fileNames) {
+          // TODO support directory with fs.lstatSync(path_string).isDirectory()
+          if (fileNames === undefined) {
+            return
+          }
+
+          if (!Array.isArray(fileNames)) {
+            return
+          }
+
+          parse(fileNames)
+            .then(spreadsheet => {
+              const copyTextarea = document.getElementById('editor')
+              const confirmation = document.getElementById('clipboard_confirmation')
+              confirmation.style.display = ''
+              copyTextarea.value = spreadsheet
+              copyTextarea.select()
+
+              bool = document.execCommand('copy')
+              if (!bool) {
+                alert('Automatic copy is unsupported by your browser.')
+              }
+            })
+            .catch(e => {
+              alert(`Reading replay files failed. Do you have rattletrap installed on your path?\n\nError:\n\n${e}`)
+            })
+
+
+          /*
+          fs.readFile(fileName, 'utf-8', function (err, data) {
+            document.getElementById("editor").value = data
+          })
+          */
+        })
+      }
+    </script>
+  </body>
+</html>

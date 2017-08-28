@@ -1,0 +1,27 @@
+{
+  "name": "rocket-league-utils",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Tools built on rattletrap.",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Nunamaker",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^19.19.1"
+  },
+  "build": {
+    "appId": "rocket-league-utils",
+    "mac": {
+      "category": "todo"
+    }
+  }
+}
