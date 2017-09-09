@@ -99,10 +99,24 @@ const inputDirectory = process.argv[2]
 
 module.exports = function (/*inputDirectory,*/inputFiles) {
   /*Promise.all(fs.readdirSync(path.resolve(inputDirectory))*/
-  return Promise.all(inputFiles
+
+  const paths = inputFiles
     .filter(filename => !!filename.match(/\.replay$/))
     .map(f => path.resolve(/*inputDirectory,*/process.cwd, f))
-    .map(parse))
+
+    // Serially parse each path and add the results to an array that this 
+    // promise resolves with.
+    const resultsPromise = paths.reduce((memo, path) => {
+      return memo.then(results => {
+        return parse(path)
+          .then(singleResult => {
+            results.push(singleResult)
+            return Promise.resolve(results)
+          })
+      })
+    }, Promise.resolve([]))
+
+  return resultsPromise 
     .then(results => {
       const gameStats = results
         .map(filter)
