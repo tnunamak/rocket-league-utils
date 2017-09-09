@@ -12,8 +12,7 @@
   },
   "author": "Tim Nunamaker",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "electron": "^1.6.11",
     "electron-builder": "^19.19.1"
