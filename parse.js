@@ -69,12 +69,12 @@ const aliases = {
   Pts: 'Score'
 }
 
-function spreadsheet (games, delimiter = '\t') {
+function spreadsheet (games, paths, delimiter = '\t') {
   const headers = columns.map(column => {
     return `"${column}"`
-  }).join(delimiter)
+  }).concat('Filename').join(delimiter)
 
-  const players = games.map(playerStats => {
+  const players = games.map((playerStats, i) => {
     return playerStats.sort((a, b) => {
       return (a.Team - b.Team) || (b.Score - a.Score)
     }).map(player => {
@@ -88,7 +88,7 @@ function spreadsheet (games, delimiter = '\t') {
       }*/
         const value = typeof player[prop] === 'undefined' ? '' : player[prop]
         return `"${value}"`
-      }).join(delimiter)
+      }).concat(paths[i]).join(delimiter)
     })
   })
 
@@ -121,7 +121,7 @@ module.exports = function (/*inputDirectory,*/inputFiles) {
       const gameStats = results
         .map(filter)
         .map(f => f.playerStats)
-      return spreadsheet(gameStats)
+      return spreadsheet(gameStats, paths)
     })
 
 }
