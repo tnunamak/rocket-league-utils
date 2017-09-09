@@ -72,7 +72,7 @@ const aliases = {
 function spreadsheet (games, paths, delimiter = '\t') {
   const headers = columns.map(column => {
     return `"${column}"`
-  }).concat('Filename').join(delimiter)
+  }).concat('"Filename"').join(delimiter)
 
   const players = games.map((playerStats, i) => {
     return playerStats.sort((a, b) => {
@@ -88,7 +88,7 @@ function spreadsheet (games, paths, delimiter = '\t') {
       }*/
         const value = typeof player[prop] === 'undefined' ? '' : player[prop]
         return `"${value}"`
-      }).concat(paths[i]).join(delimiter)
+      }).concat(`"${path.basename(paths[i])}"`).join(delimiter)
     })
   })
 
