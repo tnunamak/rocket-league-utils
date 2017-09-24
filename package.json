@@ -12,7 +12,10 @@
   },
   "author": "Tim Nunamaker",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "electron-settings": "^3.1.1",
+    "lodash": "^4.17.4"
+  },
   "devDependencies": {
     "electron": "^1.6.11",
     "electron-builder": "^19.19.1"

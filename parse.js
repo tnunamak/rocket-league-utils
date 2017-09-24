@@ -17,7 +17,7 @@ const TMP_FILE = `${app.getPath('userData')}/output.json`
 
       const body = fs.readFileSync(path.resolve(TMP_FILE))
 
-      resolve(JSON.parse(body))
+      resolve(JSON.parse(body).header.properties)
     })
   })
   //const { stdout, stderr } = await exec(`${RT} decode ${filename} ${TMP_FILE}`)
@@ -25,12 +25,22 @@ const TMP_FILE = `${app.getPath('userData')}/output.json`
 
 function filter (tree) {
   return {
-    playerStats: getPlayerStats(tree)
+    playerStats: getPlayerStats(tree),
+    teamStats: getTeamStats(tree)
   }
 }
 
+function getTeamStats (tree) {
+  let {
+    Team0Score,
+    Team1Score
+  } = getValues(tree)
+
+  return { 0: Team0Score || 0, 1: Team1Score || 0 }
+}
+
 function getPlayerStats (tree) {
-  let players = tree.header.properties.value.PlayerStats.value.array_property
+  let players = tree.value.PlayerStats.value.array_property
 
   players = players.map(player => {
     // TODO
@@ -74,9 +84,12 @@ function spreadsheet (games, paths, delimiter = '\t') {
     return `"${column}"`
   }).concat('"Filename"').join(delimiter)
 
-  const players = games.map((playerStats, i) => {
+  const players = games.map(({ teamStats, playerStats }, i) => {
     return playerStats.sort((a, b) => {
-      return (a.Team - b.Team) || (b.Score - a.Score)
+      return (teamStats[b.Team] - teamStats[a.Team]) ||
+       (b.Score - a.Score) ||
+       // MVP ties are resolved alphabetically
+       (b.Name < a.Name ? 1 : -1)
     }).map(player => {
       return columns.map(column => {
         let prop = aliases[column]
@@ -120,10 +133,8 @@ module.exports = function (/*inputDirectory,*/inputFiles) {
     .then(results => {
       const gameStats = results
         .map(filter)
-        .map(f => f.playerStats)
       return spreadsheet(gameStats, paths)
     })
-
 }
 
 function flatten (arrays) {

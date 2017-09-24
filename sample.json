@@ -1,0 +1,3430 @@
+{
+  "header": {
+    "patch_version": 0,
+    "engine_version": 868,
+    "licensee_version": 18,
+    "label": "TAGame.Replay_Soccar_TA",
+    "properties": {
+      "keys": [
+        "TeamSize",
+        "PrimaryPlayerTeam",
+        "Team0Score",
+        "Team1Score",
+        "Goals",
+        "HighLights",
+        "PlayerStats",
+        "ReplayName",
+        "ReplayVersion",
+        "GameVersion",
+        "BuildID",
+        "Changelist",
+        "BuildVersion",
+        "RecordFPS",
+        "KeyframeDelay",
+        "MaxChannels",
+        "MaxReplaySizeMB",
+        "Id",
+        "MapName",
+        "Date",
+        "NumFrames",
+        "MatchType",
+        "PlayerName"
+      ],
+      "last_key": "None",
+      "value": {
+        "BuildID": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": -246231760
+          }
+        },
+        "BuildVersion": {
+          "kind": "StrProperty",
+          "size": 24,
+          "value": {
+            "str_property": "170711.60448.164650"
+          }
+        },
+        "Changelist": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 164650
+          }
+        },
+        "Date": {
+          "kind": "StrProperty",
+          "size": 24,
+          "value": {
+            "str_property": "2017-09-20 22-54-53"
+          }
+        },
+        "GameVersion": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 20
+          }
+        },
+        "Goals": {
+          "kind": "ArrayProperty",
+          "size": 861,
+          "value": {
+            "array_property": [
+              {
+                "keys": [
+                  "frame",
+                  "PlayerName",
+                  "PlayerTeam"
+                ],
+                "last_key": "None",
+                "value": {
+                  "PlayerName": {
+                    "kind": "StrProperty",
+                    "size": 12,
+                    "value": {
+                      "str_property": "Molokoa"
+                    }
+                  },
+                  "PlayerTeam": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1179
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "PlayerName",
+                  "PlayerTeam"
+                ],
+                "last_key": "None",
+                "value": {
+                  "PlayerName": {
+                    "kind": "StrProperty",
+                    "size": 16,
+                    "value": {
+                      "str_property": "DEZtination"
+                    }
+                  },
+                  "PlayerTeam": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1772
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "PlayerName",
+                  "PlayerTeam"
+                ],
+                "last_key": "None",
+                "value": {
+                  "PlayerName": {
+                    "kind": "StrProperty",
+                    "size": 12,
+                    "value": {
+                      "str_property": "Molokoa"
+                    }
+                  },
+                  "PlayerTeam": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 3088
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "PlayerName",
+                  "PlayerTeam"
+                ],
+                "last_key": "None",
+                "value": {
+                  "PlayerName": {
+                    "kind": "StrProperty",
+                    "size": 15,
+                    "value": {
+                      "str_property": "Dondochaka"
+                    }
+                  },
+                  "PlayerTeam": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 4051
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "PlayerName",
+                  "PlayerTeam"
+                ],
+                "last_key": "None",
+                "value": {
+                  "PlayerName": {
+                    "kind": "StrProperty",
+                    "size": 12,
+                    "value": {
+                      "str_property": "Molokoa"
+                    }
+                  },
+                  "PlayerTeam": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 5155
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "PlayerName",
+                  "PlayerTeam"
+                ],
+                "last_key": "None",
+                "value": {
+                  "PlayerName": {
+                    "kind": "StrProperty",
+                    "size": 16,
+                    "value": {
+                      "str_property": "DEZtination"
+                    }
+                  },
+                  "PlayerTeam": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 6801
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "HighLights": {
+          "kind": "ArrayProperty",
+          "size": 1040,
+          "value": {
+            "array_property": [
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 9,
+                    "value": {
+                      "name_property": "None"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_600"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1179
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 9,
+                    "value": {
+                      "name_property": "None"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_615"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1772
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 9,
+                    "value": {
+                      "name_property": "None"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_625"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 3088
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 9,
+                    "value": {
+                      "name_property": "None"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_636"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 4051
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 9,
+                    "value": {
+                      "name_property": "None"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_653"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 5155
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 16,
+                    "value": {
+                      "name_property": "Ball_TA_142"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_660"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 6325
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "frame",
+                  "CarName",
+                  "BallName"
+                ],
+                "last_key": "None",
+                "value": {
+                  "BallName": {
+                    "kind": "NameProperty",
+                    "size": 16,
+                    "value": {
+                      "name_property": "Ball_TA_142"
+                    }
+                  },
+                  "CarName": {
+                    "kind": "NameProperty",
+                    "size": 15,
+                    "value": {
+                      "name_property": "Car_TA_664"
+                    }
+                  },
+                  "frame": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 6801
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Id": {
+          "kind": "StrProperty",
+          "size": 37,
+          "value": {
+            "str_property": "36D687904F0D4B3629C3B9B70CB467A4"
+          }
+        },
+        "KeyframeDelay": {
+          "kind": "FloatProperty",
+          "size": 4,
+          "value": {
+            "float_property": 10.0
+          }
+        },
+        "MapName": {
+          "kind": "NameProperty",
+          "size": 24,
+          "value": {
+            "name_property": "EuroStadium_Night_P"
+          }
+        },
+        "MatchType": {
+          "kind": "NameProperty",
+          "size": 12,
+          "value": {
+            "name_property": "Private"
+          }
+        },
+        "MaxChannels": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 2047
+          }
+        },
+        "MaxReplaySizeMB": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 10
+          }
+        },
+        "NumFrames": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 9602
+          }
+        },
+        "PlayerName": {
+          "kind": "StrProperty",
+          "size": 15,
+          "value": {
+            "str_property": "Dondochaka"
+          }
+        },
+        "PlayerStats": {
+          "kind": "ArrayProperty",
+          "size": 2701,
+          "value": {
+            "array_property": [
+              {
+                "keys": [
+                  "Name",
+                  "Platform",
+                  "OnlineID",
+                  "Team",
+                  "Score",
+                  "Goals",
+                  "Assists",
+                  "Saves",
+                  "Shots",
+                  "bBot"
+                ],
+                "last_key": "None",
+                "value": {
+                  "Assists": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Goals": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Name": {
+                    "kind": "StrProperty",
+                    "size": 15,
+                    "value": {
+                      "str_property": "Dondochaka"
+                    }
+                  },
+                  "OnlineID": {
+                    "kind": "QWordProperty",
+                    "size": 8,
+                    "value": {
+                      "q_word_property": 76561198000788935
+                    }
+                  },
+                  "Platform": {
+                    "kind": "ByteProperty",
+                    "size": 25,
+                    "value": {
+                      "byte_property": [
+                        "OnlinePlatform",
+                        "OnlinePlatform_Steam"
+                      ]
+                    }
+                  },
+                  "Saves": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Score": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 170
+                    }
+                  },
+                  "Shots": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Team": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "bBot": {
+                    "kind": "BoolProperty",
+                    "size": 0,
+                    "value": {
+                      "bool_property": 0
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "Name",
+                  "Platform",
+                  "OnlineID",
+                  "Team",
+                  "Score",
+                  "Goals",
+                  "Assists",
+                  "Saves",
+                  "Shots",
+                  "bBot"
+                ],
+                "last_key": "None",
+                "value": {
+                  "Assists": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "Goals": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 3
+                    }
+                  },
+                  "Name": {
+                    "kind": "StrProperty",
+                    "size": 12,
+                    "value": {
+                      "str_property": "Molokoa"
+                    }
+                  },
+                  "OnlineID": {
+                    "kind": "QWordProperty",
+                    "size": 8,
+                    "value": {
+                      "q_word_property": 76561198045783482
+                    }
+                  },
+                  "Platform": {
+                    "kind": "ByteProperty",
+                    "size": 25,
+                    "value": {
+                      "byte_property": [
+                        "OnlinePlatform",
+                        "OnlinePlatform_Steam"
+                      ]
+                    }
+                  },
+                  "Saves": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "Score": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 520
+                    }
+                  },
+                  "Shots": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 5
+                    }
+                  },
+                  "Team": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "bBot": {
+                    "kind": "BoolProperty",
+                    "size": 0,
+                    "value": {
+                      "bool_property": 0
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "Name",
+                  "Platform",
+                  "OnlineID",
+                  "Team",
+                  "Score",
+                  "Goals",
+                  "Assists",
+                  "Saves",
+                  "Shots",
+                  "bBot"
+                ],
+                "last_key": "None",
+                "value": {
+                  "Assists": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Goals": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "Name": {
+                    "kind": "StrProperty",
+                    "size": 10,
+                    "value": {
+                      "str_property": "Woods"
+                    }
+                  },
+                  "OnlineID": {
+                    "kind": "QWordProperty",
+                    "size": 8,
+                    "value": {
+                      "q_word_property": 76561198004943633
+                    }
+                  },
+                  "Platform": {
+                    "kind": "ByteProperty",
+                    "size": 25,
+                    "value": {
+                      "byte_property": [
+                        "OnlinePlatform",
+                        "OnlinePlatform_Steam"
+                      ]
+                    }
+                  },
+                  "Saves": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Score": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 140
+                    }
+                  },
+                  "Shots": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 2
+                    }
+                  },
+                  "Team": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "bBot": {
+                    "kind": "BoolProperty",
+                    "size": 0,
+                    "value": {
+                      "bool_property": 0
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "Name",
+                  "Platform",
+                  "OnlineID",
+                  "Team",
+                  "Score",
+                  "Goals",
+                  "Assists",
+                  "Saves",
+                  "Shots",
+                  "bBot"
+                ],
+                "last_key": "None",
+                "value": {
+                  "Assists": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Goals": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "Name": {
+                    "kind": "StrProperty",
+                    "size": 18,
+                    "value": {
+                      "str_property": "Loosecannon33"
+                    }
+                  },
+                  "OnlineID": {
+                    "kind": "QWordProperty",
+                    "size": 8,
+                    "value": {
+                      "q_word_property": 76561198068462331
+                    }
+                  },
+                  "Platform": {
+                    "kind": "ByteProperty",
+                    "size": 25,
+                    "value": {
+                      "byte_property": [
+                        "OnlinePlatform",
+                        "OnlinePlatform_Steam"
+                      ]
+                    }
+                  },
+                  "Saves": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Score": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 215
+                    }
+                  },
+                  "Shots": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 3
+                    }
+                  },
+                  "Team": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "bBot": {
+                    "kind": "BoolProperty",
+                    "size": 0,
+                    "value": {
+                      "bool_property": 0
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "Name",
+                  "Platform",
+                  "OnlineID",
+                  "Team",
+                  "Score",
+                  "Goals",
+                  "Assists",
+                  "Saves",
+                  "Shots",
+                  "bBot"
+                ],
+                "last_key": "None",
+                "value": {
+                  "Assists": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "Goals": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 2
+                    }
+                  },
+                  "Name": {
+                    "kind": "StrProperty",
+                    "size": 16,
+                    "value": {
+                      "str_property": "DEZtination"
+                    }
+                  },
+                  "OnlineID": {
+                    "kind": "QWordProperty",
+                    "size": 8,
+                    "value": {
+                      "q_word_property": 76561198161255025
+                    }
+                  },
+                  "Platform": {
+                    "kind": "ByteProperty",
+                    "size": 25,
+                    "value": {
+                      "byte_property": [
+                        "OnlinePlatform",
+                        "OnlinePlatform_Steam"
+                      ]
+                    }
+                  },
+                  "Saves": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 2
+                    }
+                  },
+                  "Score": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 275
+                    }
+                  },
+                  "Shots": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 2
+                    }
+                  },
+                  "Team": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "bBot": {
+                    "kind": "BoolProperty",
+                    "size": 0,
+                    "value": {
+                      "bool_property": 0
+                    }
+                  }
+                }
+              },
+              {
+                "keys": [
+                  "Name",
+                  "Platform",
+                  "OnlineID",
+                  "Team",
+                  "Score",
+                  "Goals",
+                  "Assists",
+                  "Saves",
+                  "Shots",
+                  "bBot"
+                ],
+                "last_key": "None",
+                "value": {
+                  "Assists": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Goals": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "Name": {
+                    "kind": "StrProperty",
+                    "size": 16,
+                    "value": {
+                      "str_property": "Tamil Camel"
+                    }
+                  },
+                  "OnlineID": {
+                    "kind": "QWordProperty",
+                    "size": 8,
+                    "value": {
+                      "q_word_property": 76561197971288877
+                    }
+                  },
+                  "Platform": {
+                    "kind": "ByteProperty",
+                    "size": 25,
+                    "value": {
+                      "byte_property": [
+                        "OnlinePlatform",
+                        "OnlinePlatform_Steam"
+                      ]
+                    }
+                  },
+                  "Saves": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 1
+                    }
+                  },
+                  "Score": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 125
+                    }
+                  },
+                  "Shots": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 3
+                    }
+                  },
+                  "Team": {
+                    "kind": "IntProperty",
+                    "size": 4,
+                    "value": {
+                      "int_property": 0
+                    }
+                  },
+                  "bBot": {
+                    "kind": "BoolProperty",
+                    "size": 0,
+                    "value": {
+                      "bool_property": 0
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "PrimaryPlayerTeam": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 1
+          }
+        },
+        "RecordFPS": {
+          "kind": "FloatProperty",
+          "size": 4,
+          "value": {
+            "float_property": 30.0
+          }
+        },
+        "ReplayName": {
+          "kind": "StrProperty",
+          "size": 21,
+          "value": {
+            "str_property": "best scarab goal"
+          }
+        },
+        "ReplayVersion": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 5
+          }
+        },
+        "Team0Score": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 2
+          }
+        },
+        "Team1Score": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 4
+          }
+        },
+        "TeamSize": {
+          "kind": "IntProperty",
+          "size": 4,
+          "value": {
+            "int_property": 4
+          }
+        }
+      }
+    }
+  },
+  "content": {
+    "levels": [
+      "eurostadium_night_sfx"
+    ],
+    "key_frames": [
+      {
+        "time": 7.0210104,
+        "frame": 0,
+        "position": 0
+      },
+      {
+        "time": 17.058573,
+        "frame": 256,
+        "position": 158139
+      },
+      {
+        "time": 27.084103,
+        "frame": 515,
+        "position": 414150
+      },
+      {
+        "time": 37.101093,
+        "frame": 775,
+        "position": 665482
+      },
+      {
+        "time": 47.117058,
+        "frame": 1040,
+        "position": 925112
+      },
+      {
+        "time": 61.09477,
+        "frame": 1260,
+        "position": 1129180
+      },
+      {
+        "time": 71.10998,
+        "frame": 1514,
+        "position": 1293194
+      },
+      {
+        "time": 81.110664,
+        "frame": 1764,
+        "position": 1547214
+      },
+      {
+        "time": 87.71626,
+        "frame": 1853,
+        "position": 1641830
+      },
+      {
+        "time": 97.73636,
+        "frame": 2113,
+        "position": 1807028
+      },
+      {
+        "time": 107.74609,
+        "frame": 2376,
+        "position": 2064442
+      },
+      {
+        "time": 117.76202,
+        "frame": 2635,
+        "position": 2320240
+      },
+      {
+        "time": 127.79087,
+        "frame": 2880,
+        "position": 2571608
+      },
+      {
+        "time": 137.82278,
+        "frame": 3145,
+        "position": 2825616
+      },
+      {
+        "time": 147.68823,
+        "frame": 3170,
+        "position": 2867928
+      },
+      {
+        "time": 157.71092,
+        "frame": 3432,
+        "position": 3033485
+      },
+      {
+        "time": 167.74376,
+        "frame": 3691,
+        "position": 3289194
+      },
+      {
+        "time": 177.75496,
+        "frame": 3953,
+        "position": 3544298
+      },
+      {
+        "time": 187.43648,
+        "frame": 4132,
+        "position": 3712367
+      },
+      {
+        "time": 197.44333,
+        "frame": 4383,
+        "position": 3877236
+      },
+      {
+        "time": 207.45985,
+        "frame": 4640,
+        "position": 4133569
+      },
+      {
+        "time": 217.47748,
+        "frame": 4894,
+        "position": 4389312
+      },
+      {
+        "time": 227.49226,
+        "frame": 5167,
+        "position": 4650414
+      },
+      {
+        "time": 235.51926,
+        "frame": 5236,
+        "position": 4724158
+      },
+      {
+        "time": 245.531,
+        "frame": 5489,
+        "position": 4888897
+      },
+      {
+        "time": 255.56398,
+        "frame": 5744,
+        "position": 5142583
+      },
+      {
+        "time": 265.5766,
+        "frame": 6004,
+        "position": 5397374
+      },
+      {
+        "time": 275.58936,
+        "frame": 6255,
+        "position": 5650642
+      },
+      {
+        "time": 285.62195,
+        "frame": 6512,
+        "position": 5905976
+      },
+      {
+        "time": 295.65192,
+        "frame": 6773,
+        "position": 6165306
+      },
+      {
+        "time": 305.67862,
+        "frame": 6884,
+        "position": 6276521
+      },
+      {
+        "time": 315.70428,
+        "frame": 7140,
+        "position": 6442286
+      },
+      {
+        "time": 325.73038,
+        "frame": 7398,
+        "position": 6700275
+      },
+      {
+        "time": 335.7327,
+        "frame": 7657,
+        "position": 6956946
+      },
+      {
+        "time": 345.75235,
+        "frame": 7914,
+        "position": 7214452
+      },
+      {
+        "time": 355.7649,
+        "frame": 8176,
+        "position": 7472550
+      },
+      {
+        "time": 365.78223,
+        "frame": 8429,
+        "position": 7727806
+      },
+      {
+        "time": 375.78406,
+        "frame": 8690,
+        "position": 7986447
+      },
+      {
+        "time": 385.81314,
+        "frame": 8960,
+        "position": 8245839
+      },
+      {
+        "time": 395.84232,
+        "frame": 9234,
+        "position": 8509224
+      },
+      {
+        "time": 405.84717,
+        "frame": 9503,
+        "position": 8772600
+      }
+    ],
+    "stream_size": 1111040,
+    "messages": [],
+    "marks": [
+      {
+        "value": "Team1Goal",
+        "frame": 1134
+      },
+      {
+        "value": "Team0Goal",
+        "frame": 1727
+      },
+      {
+        "value": "Team1Goal",
+        "frame": 3043
+      },
+      {
+        "value": "User",
+        "frame": 3169
+      },
+      {
+        "value": "Team1Goal",
+        "frame": 4006
+      },
+      {
+        "value": "Team1Goal",
+        "frame": 5110
+      },
+      {
+        "value": "Team1Save",
+        "frame": 6280
+      },
+      {
+        "value": "Team0Goal",
+        "frame": 6756
+      }
+    ],
+    "packages": [
+      "..\\..\\TAGame\\CookedPCConsole\\Core.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\Engine.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\GFxUI.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\GameFramework.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\OnlineSubsystemSteamworks.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\AkAudio.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\ProjectX.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\TAGame.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\GameInfo_Soccar_SF.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\EuroStadium_Night_P.upk",
+      "..\\..\\TAGame\\CookedPCConsole\\EuroStadium_Night_SFX.upk"
+    ],
+    "objects": [
+      "Core.Object",
+      "Engine.Actor:RelativeRotation",
+      "Engine.Actor:RelativeLocation",
+      "Engine.Actor:Velocity",
+      "Engine.Actor:Instigator",
+      "Engine.Actor:bNetOwner",
+      "Engine.Actor:bProjTarget",
+      "Engine.Actor:bBlockActors",
+      "Engine.Actor:bCollideWorld",
+      "Engine.Actor:bCollideActors",
+      "Engine.Actor:bHardAttach",
+      "Engine.Actor:bTearOff",
+      "Engine.Actor:bHidden",
+      "Engine.Actor:Base",
+      "Engine.Actor:Owner",
+      "Engine.Actor:ReplicatedCollisionType",
+      "Engine.Actor:Role",
+      "Engine.Actor:RemoteRole",
+      "Engine.Actor:Physics",
+      "Engine.Actor:DrawScale",
+      "Engine.Actor:Rotation",
+      "Engine.Actor:Location",
+      "Engine.Actor",
+      "TAGame.GameEvent_TA:MatchSettings",
+      "TAGame.GameEvent_TA:GameOwner",
+      "TAGame.GameEvent_TA:ReplicatedGameStateTimeRemaining",
+      "TAGame.GameEvent_TA:ReplicatedStateName",
+      "TAGame.GameEvent_TA:ActivatorCar",
+      "TAGame.GameEvent_TA:BotSkill",
+      "TAGame.GameEvent_TA:bCanVoteToForfeit",
+      "TAGame.GameEvent_TA:bHasLeaveMatchPenalty",
+      "TAGame.GameEvent_TA:bAllowReadyUp",
+      "TAGame.GameEvent_TA:ReplicatedStateIndex",
+      "TAGame.GameEvent_TA:MatchTypeClass",
+      "TAGame.GameEvent_TA",
+      "TAGame.GameEvent_Team_TA:bForfeit",
+      "TAGame.GameEvent_Team_TA:bDisableMutingOtherTeam",
+      "TAGame.GameEvent_Team_TA:MaxTeamSize",
+      "TAGame.GameEvent_Team_TA",
+      "TAGame.GameEvent_Soccar_TA:SubRulesArchetype",
+      "TAGame.GameEvent_Soccar_TA:ReplicatedMusicStinger",
+      "TAGame.GameEvent_Soccar_TA:RoundNum",
+      "TAGame.GameEvent_Soccar_TA:ReplicatedScoredOnTeam",
+      "TAGame.GameEvent_Soccar_TA:MVP",
+      "TAGame.GameEvent_Soccar_TA:MatchWinner",
+      "TAGame.GameEvent_Soccar_TA:GameWinner",
+      "TAGame.GameEvent_Soccar_TA:ReplayDirector",
+      "TAGame.GameEvent_Soccar_TA:bMatchEnded",
+      "TAGame.GameEvent_Soccar_TA:bNoContest",
+      "TAGame.GameEvent_Soccar_TA:bOverTime",
+      "TAGame.GameEvent_Soccar_TA:bBallHasBeenHit",
+      "TAGame.GameEvent_Soccar_TA:SecondsRemaining",
+      "TAGame.GameEvent_Soccar_TA:GameTime",
+      "TAGame.GameEvent_Soccar_TA",
+      "Archetypes.GameEvent.GameEvent_Soccar",
+      "Engine.Info",
+      "Engine.ReplicationInfo",
+      "Engine.PlayerReplicationInfo:RemoteUserData",
+      "Engine.PlayerReplicationInfo:UniqueId",
+      "Engine.PlayerReplicationInfo:bFromPreviousLevel",
+      "Engine.PlayerReplicationInfo:bIsInactive",
+      "Engine.PlayerReplicationInfo:bBot",
+      "Engine.PlayerReplicationInfo:bOutOfLives",
+      "Engine.PlayerReplicationInfo:bReadyToPlay",
+      "Engine.PlayerReplicationInfo:bWaitingPlayer",
+      "Engine.PlayerReplicationInfo:bOnlySpectator",
+      "Engine.PlayerReplicationInfo:bIsSpectator",
+      "Engine.PlayerReplicationInfo:bAdmin",
+      "Engine.PlayerReplicationInfo:Team",
+      "Engine.PlayerReplicationInfo:PlayerID",
+      "Engine.PlayerReplicationInfo:PlayerName",
+      "Engine.PlayerReplicationInfo:Ping",
+      "Engine.PlayerReplicationInfo:Deaths",
+      "Engine.PlayerReplicationInfo:Score",
+      "Engine.PlayerReplicationInfo:ClientFillRemoteUserData",
+      "Engine.PlayerReplicationInfo:ServerUpdateRemoteUserData",
+      "Engine.PlayerReplicationInfo",
+      "ProjectX.PRI_X",
+      "TAGame.PRI_TA:BotProductName",
+      "TAGame.PRI_TA:RepStatTitles",
+      "TAGame.PRI_TA:ReplacingBotPRI",
+      "TAGame.PRI_TA:MaxTimeTillItem",
+      "TAGame.PRI_TA:TimeTillItem",
+      "TAGame.PRI_TA:SkillTier",
+      "TAGame.PRI_TA:Title",
+      "TAGame.PRI_TA:TotalXP",
+      "TAGame.PRI_TA:PartyLeader",
+      "TAGame.PRI_TA:PawnType",
+      "TAGame.PRI_TA:PersistentCamera",
+      "TAGame.PRI_TA:RespawnTimeRemaining",
+      "TAGame.PRI_TA:ClientLoadoutsOnline",
+      "TAGame.PRI_TA:ClientLoadouts",
+      "TAGame.PRI_TA:ClientLoadoutOnline",
+      "TAGame.PRI_TA:ClientLoadout",
+      "TAGame.PRI_TA:ReplicatedGameEvent",
+      "TAGame.PRI_TA:bUsingItems",
+      "TAGame.PRI_TA:bVoteToForfeitDisabled",
+      "TAGame.PRI_TA:bIsInSplitScreen",
+      "TAGame.PRI_TA:bBusy",
+      "TAGame.PRI_TA:bReady",
+      "TAGame.PRI_TA:bOnlineLoadoutsSet",
+      "TAGame.PRI_TA:bOnlineLoadoutSet",
+      "TAGame.PRI_TA:bMatchAdmin",
+      "TAGame.PRI_TA:bMatchMVP",
+      "TAGame.PRI_TA:MatchBreakoutDamage",
+      "TAGame.PRI_TA:MatchShots",
+      "TAGame.PRI_TA:MatchSaves",
+      "TAGame.PRI_TA:MatchAssists",
+      "TAGame.PRI_TA:MatchGoals",
+      "TAGame.PRI_TA:MatchScore",
+      "TAGame.PRI_TA:ServerSetPartyLeader",
+      "TAGame.PRI_TA:ServerSplitScreenStatusChanged",
+      "TAGame.PRI_TA:ServerSetLoadout",
+      "TAGame.PRI_TA:ClientNotifyGainedStat",
+      "TAGame.PRI_TA:ClientScoredGoal",
+      "TAGame.PRI_TA:ClientNotifyStatTickerMessage",
+      "TAGame.PRI_TA:ClientGiveOnlineReward",
+      "TAGame.PRI_TA:ClientGenerateItemDrop",
+      "TAGame.PRI_TA:ClientUpdateOnlineProductStats",
+      "TAGame.PRI_TA:ServerReadyUp",
+      "TAGame.PRI_TA:ServerMatchAdminSetScoreAndTime",
+      "TAGame.PRI_TA:ServerMatchAdminSetPaused",
+      "TAGame.PRI_TA:ServerSetVoteStatus",
+      "TAGame.PRI_TA:ServerChangeTeam",
+      "TAGame.PRI_TA:ClientChangeTeamFailed",
+      "TAGame.PRI_TA:ServerSpectate",
+      "TAGame.PRI_TA:ServerSetTotalXP",
+      "TAGame.PRI_TA:ServerSetDodgeInputThreshold",
+      "TAGame.PRI_TA:ServerVoteToForfeit",
+      "TAGame.PRI_TA:ServerSetPlayerActivatedFX",
+      "TAGame.PRI_TA:ClientUnlockAchievement",
+      "TAGame.PRI_TA",
+      "TAGame.Default__PRI_TA",
+      "TAGame.CameraSettingsActor_TA:CameraYaw",
+      "TAGame.CameraSettingsActor_TA:CameraPitch",
+      "TAGame.CameraSettingsActor_TA:bUsingFreecam",
+      "TAGame.CameraSettingsActor_TA:bUsingBehindView",
+      "TAGame.CameraSettingsActor_TA:bUsingSecondaryCamera",
+      "TAGame.CameraSettingsActor_TA:ProfileSettings",
+      "TAGame.CameraSettingsActor_TA:PRI",
+      "TAGame.CameraSettingsActor_TA:ServerSetCameraSettings",
+      "TAGame.CameraSettingsActor_TA:ServerSetUsingSecondaryCamera",
+      "TAGame.CameraSettingsActor_TA:ServerSetUsingBehindView",
+      "TAGame.CameraSettingsActor_TA:ServerSetUsingFreecam",
+      "TAGame.CameraSettingsActor_TA:ServerSetCameraRotation",
+      "TAGame.CameraSettingsActor_TA:ServerSetCameraRotationReliable",
+      "TAGame.CameraSettingsActor_TA",
+      "TAGame.Default__CameraSettingsActor_TA",
+      "Engine.Pawn:RootMotionInterpCurveLastValue",
+      "Engine.Pawn:RootMotionInterpCurrentTime",
+      "Engine.Pawn:RootMotionInterpRate",
+      "Engine.Pawn:FlashLocation",
+      "Engine.Pawn:InvManager",
+      "Engine.Pawn:DrivenVehicle",
+      "Engine.Pawn:TearOffMomentum",
+      "Engine.Pawn:HitDamageType",
+      "Engine.Pawn:TakeHitLocation",
+      "Engine.Pawn:PlayerReplicationInfo",
+      "Engine.Pawn:HealthMax",
+      "Engine.Pawn:Health",
+      "Engine.Pawn:AirControl",
+      "Engine.Pawn:JumpZ",
+      "Engine.Pawn:AccelRate",
+      "Engine.Pawn:AirSpeed",
+      "Engine.Pawn:WaterSpeed",
+      "Engine.Pawn:GroundSpeed",
+      "Engine.Pawn:FiringMode",
+      "Engine.Pawn:FlashCount",
+      "Engine.Pawn:RemoteViewPitch",
+      "Engine.Pawn:bFastAttachedMove",
+      "Engine.Pawn:bRootMotionFromInterpCurve",
+      "Engine.Pawn:bUsedByMatinee",
+      "Engine.Pawn:bCanSwatTurn",
+      "Engine.Pawn:bSimulateGravity",
+      "Engine.Pawn:bIsCrouched",
+      "Engine.Pawn:bIsWalking",
+      "Engine.Pawn:Controller",
+      "Engine.Pawn",
+      "ProjectX.Pawn_X",
+      "TAGame.RBActor_TA:WeldedInfo",
+      "TAGame.RBActor_TA:ReplicatedRBState",
+      "TAGame.RBActor_TA:bIgnoreSyncing",
+      "TAGame.RBActor_TA:bFrozen",
+      "TAGame.RBActor_TA:bReplayActor",
+      "TAGame.RBActor_TA",
+      "TAGame.Ball_TA:BallTouchScore",
+      "TAGame.Ball_TA:BallBelongsTo",
+      "TAGame.Ball_TA:ReplicatedExplosionDataExtended",
+      "TAGame.Ball_TA:ReplicatedExplosionData",
+      "TAGame.Ball_TA:GameEvent",
+      "TAGame.Ball_TA:HitTeamNum",
+      "TAGame.Ball_TA:ReplicatedAddedCarBounceScale",
+      "TAGame.Ball_TA:ReplicatedBallMaxLinearSpeedScale",
+      "TAGame.Ball_TA:ReplicatedBallGravityScale",
+      "TAGame.Ball_TA:ReplicatedWorldBounceScale",
+      "TAGame.Ball_TA:ReplicatedBallMesh",
+      "TAGame.Ball_TA:ReplicatedBallScale",
+      "TAGame.Ball_TA:bEndOfGameHidden",
+      "TAGame.Ball_TA",
+      "Archetypes.Ball.Ball_Default",
+      "Engine.GameReplicationInfo:Winner",
+      "Engine.GameReplicationInfo:ServerName",
+      "Engine.GameReplicationInfo:TimeLimit",
+      "Engine.GameReplicationInfo:GoalScore",
+      "Engine.GameReplicationInfo:RemainingMinute",
+      "Engine.GameReplicationInfo:ElapsedTime",
+      "Engine.GameReplicationInfo:RemainingTime",
+      "Engine.GameReplicationInfo:bMatchIsOver",
+      "Engine.GameReplicationInfo:bMatchHasBegun",
+      "Engine.GameReplicationInfo:bStopCountDown",
+      "Engine.GameReplicationInfo:GameClass",
+      "Engine.GameReplicationInfo",
+      "ProjectX.GRI_X:bGameStarted",
+      "ProjectX.GRI_X:GameServerID",
+      "ProjectX.GRI_X:Reservations",
+      "ProjectX.GRI_X:ReplicatedGameMutatorIndex",
+      "ProjectX.GRI_X:ReplicatedGamePlaylist",
+      "ProjectX.GRI_X",
+      "TAGame.GRI_TA:NewDedicatedServerIP",
+      "TAGame.GRI_TA",
+      "GameInfo_Soccar.GameInfo.GameInfo_Soccar:GameReplicationInfoArchetype",
+      "Engine.TeamInfo:TeamIndex",
+      "Engine.TeamInfo:Score",
+      "Engine.TeamInfo:TeamName",
+      "Engine.TeamInfo",
+      "TAGame.Team_TA:ClubColors",
+      "TAGame.Team_TA:LogoData",
+      "TAGame.Team_TA:CustomTeamName",
+      "TAGame.Team_TA:GameEvent",
+      "TAGame.Team_TA",
+      "TAGame.Team_Soccar_TA:GameScore",
+      "TAGame.Team_Soccar_TA",
+      "Archetypes.Teams.Team1",
+      "Archetypes.Teams.Team0",
+      "TAGame.CarComponent_TA:ReplicatedActivityTime",
+      "TAGame.CarComponent_TA:Vehicle",
+      "TAGame.CarComponent_TA:ReplicatedActive",
+      "TAGame.CarComponent_TA",
+      "TAGame.CarComponent_Jump_TA",
+      "Archetypes.CarComponents.CarComponent_Jump",
+      "TAGame.CarComponent_Boost_TA:ReplicatedBoostAmount",
+      "TAGame.CarComponent_Boost_TA:bNoBoost",
+      "TAGame.CarComponent_Boost_TA:UnlimitedBoostRefCount",
+      "TAGame.CarComponent_Boost_TA:RechargeDelay",
+      "TAGame.CarComponent_Boost_TA:RechargeRate",
+      "TAGame.CarComponent_Boost_TA:BoostModifier",
+      "TAGame.CarComponent_Boost_TA:CurrentBoostAmount",
+      "TAGame.CarComponent_Boost_TA:StartBoostAmount",
+      "TAGame.CarComponent_Boost_TA:ServerConfirmBoostAmount",
+      "TAGame.CarComponent_Boost_TA:ClientFixBoostAmount",
+      "TAGame.CarComponent_Boost_TA:ClientGiveBoost",
+      "TAGame.CarComponent_Boost_TA",
+      "Archetypes.CarComponents.CarComponent_Boost",
+      "TAGame.CarComponent_DoubleJump_TA",
+      "Archetypes.CarComponents.CarComponent_DoubleJump",
+      "TAGame.CarComponent_Dodge_TA:DodgeTorque",
+      "TAGame.CarComponent_Dodge_TA",
+      "Archetypes.CarComponents.CarComponent_Dodge",
+      "TAGame.CarComponent_FlipCar_TA:bFlipRight",
+      "TAGame.CarComponent_FlipCar_TA:FlipCarTime",
+      "TAGame.CarComponent_FlipCar_TA",
+      "Archetypes.CarComponents.CarComponent_FlipCar",
+      "TAGame.Vehicle_TA:ReplicatedSteer",
+      "TAGame.Vehicle_TA:ReplicatedThrottle",
+      "TAGame.Vehicle_TA:bPodiumMode",
+      "TAGame.Vehicle_TA:bReplicatedHandbrake",
+      "TAGame.Vehicle_TA:bDriving",
+      "TAGame.Vehicle_TA",
+      "TAGame.Car_TA:AddedCarForceMultiplier",
+      "TAGame.Car_TA:AddedBallForceMultiplier",
+      "TAGame.Car_TA:AttachedPickup",
+      "TAGame.Car_TA:AttachedBall",
+      "TAGame.Car_TA:ReplicatedDemolish",
+      "TAGame.Car_TA:bOverrideBoostOn",
+      "TAGame.Car_TA:bOverrideHandbrakeOn",
+      "TAGame.Car_TA:ReplicatedCarScale",
+      "TAGame.Car_TA:ClubColors",
+      "TAGame.Car_TA:TeamPaint",
+      "TAGame.Car_TA:ServerEquipProduct",
+      "TAGame.Car_TA",
+      "Archetypes.Car.Car_Default",
+      "TAGame.CrowdActor_TA:ReplicatedRoundCountDownNumber",
+      "TAGame.CrowdActor_TA:ReplicatedCountDownNumber",
+      "TAGame.CrowdActor_TA:ReplicatedOneShotSound",
+      "TAGame.CrowdActor_TA:ModifiedNoise",
+      "TAGame.CrowdActor_TA:GameEvent",
+      "TAGame.CrowdActor_TA",
+      "eurostadium_night_sfx.TheWorld:PersistentLevel.CrowdActor_TA_0",
+      "TAGame.CrowdManager_TA:GameEvent",
+      "TAGame.CrowdManager_TA:ReplicatedGlobalOneShotSound",
+      "TAGame.CrowdManager_TA",
+      "eurostadium_night_sfx.TheWorld:PersistentLevel.CrowdManager_TA_0",
+      "TAGame.MatchType_Private_TA",
+      "TAGame.ProductAttribute_Painted_TA",
+      "TAGame.GameInfo_Soccar_TA",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_SlowRise",
+      "TAGame.VehiclePickup_TA:bNoPickup",
+      "TAGame.VehiclePickup_TA:ReplicatedPickupData",
+      "TAGame.VehiclePickup_TA",
+      "TAGame.VehiclePickup_Boost_TA",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_11",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_21",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_38",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_5",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_67",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_68",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_QuickSubtle",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_65",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_41",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_3",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_66",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_64",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_63",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_Upset",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_Shock",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_4",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_43",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_40",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_23",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_Chant",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_14",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_18",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_13",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_31",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_34",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_35",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_32",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_33",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_10",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_7",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_19",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_36",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_12",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.GoalVolume_TA_0.Goal_TA_1",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_GoalApplause",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_17",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_39",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.GoalVolume_TA_4.Goal_TA_1",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_28",
+      "SFX_BG_Crowd.BG_Crowd_OneShots_MildApplause",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_42",
+      "EuroStadium_Night_P.TheWorld:PersistentLevel.VehiclePickup_Boost_TA_20"
+    ],
+    "names": [
+      "GameEvent_Soccar_TA_9",
+      "PRI_TA_42",
+      "CameraSettingsActor_TA_371",
+      "Ball_TA_132",
+      "GRI_TA_18",
+      "CameraSettingsActor_TA_372",
+      "PRI_TA_43",
+      "PRI_TA_44",
+      "CameraSettingsActor_TA_373",
+      "CameraSettingsActor_TA_374",
+      "PRI_TA_45",
+      "Team_Soccar_TA_22",
+      "Team_Soccar_TA_23",
+      "PRI_TA_46",
+      "CameraSettingsActor_TA_375",
+      "PRI_TA_47",
+      "CameraSettingsActor_TA_376",
+      "CarComponent_Jump_TA_602",
+      "CarComponent_Boost_TA_602",
+      "CarComponent_DoubleJump_TA_602",
+      "CarComponent_Dodge_TA_602",
+      "CarComponent_FlipCar_TA_602",
+      "Car_TA_600",
+      "Car_TA_601",
+      "CarComponent_Boost_TA_603",
+      "CarComponent_Jump_TA_603",
+      "CarComponent_DoubleJump_TA_603",
+      "CarComponent_FlipCar_TA_603",
+      "CarComponent_Dodge_TA_603",
+      "CarComponent_Boost_TA_604",
+      "CarComponent_Jump_TA_604",
+      "CarComponent_DoubleJump_TA_604",
+      "CarComponent_Dodge_TA_604",
+      "CarComponent_FlipCar_TA_604",
+      "Car_TA_602",
+      "Car_TA_603",
+      "CarComponent_Boost_TA_605",
+      "CarComponent_Jump_TA_605",
+      "CarComponent_DoubleJump_TA_605",
+      "CarComponent_FlipCar_TA_605",
+      "CarComponent_Dodge_TA_605",
+      "Car_TA_604",
+      "CarComponent_Boost_TA_606",
+      "CarComponent_Jump_TA_606",
+      "CarComponent_DoubleJump_TA_606",
+      "CarComponent_Dodge_TA_606",
+      "CarComponent_FlipCar_TA_606",
+      "Car_TA_605",
+      "CarComponent_Boost_TA_607",
+      "CarComponent_DoubleJump_TA_607",
+      "CarComponent_Jump_TA_607",
+      "CarComponent_FlipCar_TA_607",
+      "CarComponent_Dodge_TA_607",
+      "CrowdActor_TA_0",
+      "CrowdManager_TA_0",
+      "Countdown",
+      "XP",
+      "Active",
+      "VehiclePickup_Boost_TA_11",
+      "VehiclePickup_Boost_TA_21",
+      "VehiclePickup_Boost_TA_38",
+      "VehiclePickup_Boost_TA_5",
+      "VehiclePickup_Boost_TA_67",
+      "VehiclePickup_Boost_TA_68",
+      "VehiclePickup_Boost_TA_65",
+      "VehiclePickup_Boost_TA_41",
+      "VehiclePickup_Boost_TA_3",
+      "VehiclePickup_Boost_TA_66",
+      "VehiclePickup_Boost_TA_64",
+      "VehiclePickup_Boost_TA_63",
+      "VehiclePickup_Boost_TA_4",
+      "VehiclePickup_Boost_TA_43",
+      "VehiclePickup_Boost_TA_40",
+      "VehiclePickup_Boost_TA_23",
+      "VehiclePickup_Boost_TA_14",
+      "VehiclePickup_Boost_TA_18",
+      "VehiclePickup_Boost_TA_13",
+      "VehiclePickup_Boost_TA_31",
+      "VehiclePickup_Boost_TA_34",
+      "VehiclePickup_Boost_TA_35",
+      "VehiclePickup_Boost_TA_32",
+      "VehiclePickup_Boost_TA_33",
+      "VehiclePickup_Boost_TA_10",
+      "VehiclePickup_Boost_TA_7",
+      "VehiclePickup_Boost_TA_19",
+      "VehiclePickup_Boost_TA_36",
+      "VehiclePickup_Boost_TA_12",
+      "PostGoalScored",
+      "Car_TA_612",
+      "CarComponent_DoubleJump_TA_614",
+      "CarComponent_Jump_TA_614",
+      "CarComponent_Dodge_TA_614",
+      "CarComponent_Boost_TA_614",
+      "CarComponent_FlipCar_TA_614",
+      "Car_TA_613",
+      "Car_TA_614",
+      "Car_TA_615",
+      "CarComponent_DoubleJump_TA_615",
+      "CarComponent_Jump_TA_615",
+      "CarComponent_DoubleJump_TA_616",
+      "CarComponent_Boost_TA_615",
+      "CarComponent_FlipCar_TA_615",
+      "CarComponent_DoubleJump_TA_617",
+      "CarComponent_FlipCar_TA_616",
+      "CarComponent_Jump_TA_616",
+      "CarComponent_Boost_TA_616",
+      "CarComponent_FlipCar_TA_617",
+      "CarComponent_Boost_TA_617",
+      "CarComponent_Jump_TA_617",
+      "CarComponent_Dodge_TA_615",
+      "CarComponent_Dodge_TA_616",
+      "CarComponent_FlipCar_TA_618",
+      "CarComponent_DoubleJump_TA_618",
+      "CarComponent_Jump_TA_618",
+      "CarComponent_Dodge_TA_617",
+      "CarComponent_Dodge_TA_618",
+      "CarComponent_Boost_TA_618",
+      "CarComponent_Boost_TA_619",
+      "CarComponent_DoubleJump_TA_619",
+      "CarComponent_Dodge_TA_619",
+      "CarComponent_FlipCar_TA_619",
+      "CarComponent_Jump_TA_619",
+      "Ball_TA_134",
+      "Car_TA_616",
+      "Car_TA_617",
+      "VehiclePickup_Boost_TA_17",
+      "VehiclePickup_Boost_TA_39",
+      "Car_TA_624",
+      "CarComponent_DoubleJump_TA_626",
+      "CarComponent_Jump_TA_626",
+      "CarComponent_FlipCar_TA_626",
+      "CarComponent_Boost_TA_626",
+      "CarComponent_Dodge_TA_626",
+      "Car_TA_625",
+      "CarComponent_Dodge_TA_627",
+      "CarComponent_DoubleJump_TA_627",
+      "CarComponent_Dodge_TA_628",
+      "CarComponent_Boost_TA_627",
+      "CarComponent_FlipCar_TA_627",
+      "CarComponent_Jump_TA_627",
+      "CarComponent_Boost_TA_628",
+      "CarComponent_Jump_TA_628",
+      "CarComponent_FlipCar_TA_628",
+      "CarComponent_Boost_TA_629",
+      "CarComponent_FlipCar_TA_629",
+      "CarComponent_FlipCar_TA_630",
+      "CarComponent_Dodge_TA_629",
+      "CarComponent_Dodge_TA_630",
+      "CarComponent_DoubleJump_TA_628",
+      "CarComponent_DoubleJump_TA_629",
+      "CarComponent_Jump_TA_629",
+      "CarComponent_DoubleJump_TA_630",
+      "CarComponent_Boost_TA_630",
+      "CarComponent_Jump_TA_630",
+      "CarComponent_Boost_TA_631",
+      "CarComponent_DoubleJump_TA_631",
+      "CarComponent_Jump_TA_631",
+      "CarComponent_FlipCar_TA_631",
+      "CarComponent_Dodge_TA_631",
+      "Ball_TA_136",
+      "Car_TA_626",
+      "Car_TA_627",
+      "Car_TA_628",
+      "Car_TA_629",
+      "VehiclePickup_Boost_TA_28",
+      "VehiclePickup_Boost_TA_42",
+      "Car_TA_636",
+      "CarComponent_Jump_TA_638",
+      "CarComponent_Boost_TA_638",
+      "CarComponent_DoubleJump_TA_638",
+      "CarComponent_Dodge_TA_638",
+      "CarComponent_FlipCar_TA_638",
+      "Car_TA_637",
+      "Car_TA_638",
+      "Car_TA_639",
+      "Ball_TA_138",
+      "CarComponent_Jump_TA_639",
+      "CarComponent_Boost_TA_639",
+      "CarComponent_Jump_TA_640",
+      "CarComponent_Boost_TA_640",
+      "CarComponent_Boost_TA_641",
+      "CarComponent_FlipCar_TA_639",
+      "CarComponent_Dodge_TA_639",
+      "CarComponent_FlipCar_TA_640",
+      "CarComponent_DoubleJump_TA_639",
+      "CarComponent_Jump_TA_641",
+      "CarComponent_Dodge_TA_640",
+      "CarComponent_Boost_TA_642",
+      "CarComponent_DoubleJump_TA_640",
+      "CarComponent_DoubleJump_TA_641",
+      "CarComponent_Dodge_TA_641",
+      "CarComponent_FlipCar_TA_641",
+      "CarComponent_Boost_TA_643",
+      "CarComponent_Jump_TA_642",
+      "CarComponent_FlipCar_TA_642",
+      "CarComponent_Dodge_TA_642",
+      "CarComponent_DoubleJump_TA_642",
+      "CarComponent_Jump_TA_643",
+      "CarComponent_DoubleJump_TA_643",
+      "CarComponent_Dodge_TA_643",
+      "CarComponent_FlipCar_TA_643",
+      "Car_TA_640",
+      "Car_TA_641",
+      "VehiclePickup_Boost_TA_20",
+      "Car_TA_648",
+      "CarComponent_DoubleJump_TA_650",
+      "CarComponent_Boost_TA_650",
+      "CarComponent_Dodge_TA_650",
+      "CarComponent_FlipCar_TA_650",
+      "CarComponent_Jump_TA_650",
+      "Ball_TA_140",
+      "CarComponent_Jump_TA_651",
+      "CarComponent_FlipCar_TA_651",
+      "CarComponent_Dodge_TA_651",
+      "CarComponent_DoubleJump_TA_651",
+      "CarComponent_DoubleJump_TA_652",
+      "CarComponent_Jump_TA_652",
+      "CarComponent_Boost_TA_651",
+      "CarComponent_FlipCar_TA_652",
+      "CarComponent_Dodge_TA_652",
+      "CarComponent_DoubleJump_TA_653",
+      "CarComponent_Jump_TA_653",
+      "CarComponent_Boost_TA_652",
+      "CarComponent_FlipCar_TA_653",
+      "CarComponent_Dodge_TA_653",
+      "CarComponent_Boost_TA_653",
+      "CarComponent_Jump_TA_654",
+      "CarComponent_Boost_TA_654",
+      "CarComponent_FlipCar_TA_654",
+      "CarComponent_Dodge_TA_654",
+      "CarComponent_Boost_TA_655",
+      "CarComponent_DoubleJump_TA_654",
+      "CarComponent_DoubleJump_TA_655",
+      "CarComponent_Dodge_TA_655",
+      "CarComponent_FlipCar_TA_655",
+      "CarComponent_Jump_TA_655",
+      "Car_TA_649",
+      "Car_TA_650",
+      "Car_TA_651",
+      "Car_TA_652",
+      "Car_TA_653",
+      "Car_TA_660",
+      "CarComponent_DoubleJump_TA_662",
+      "CarComponent_Dodge_TA_662",
+      "CarComponent_FlipCar_TA_662",
+      "CarComponent_Jump_TA_662",
+      "CarComponent_Boost_TA_662",
+      "Car_TA_661",
+      "Car_TA_662",
+      "CarComponent_DoubleJump_TA_663",
+      "CarComponent_Jump_TA_663",
+      "CarComponent_Boost_TA_663",
+      "CarComponent_FlipCar_TA_663",
+      "CarComponent_FlipCar_TA_664",
+      "CarComponent_Dodge_TA_663",
+      "CarComponent_Jump_TA_664",
+      "CarComponent_Boost_TA_664",
+      "CarComponent_Dodge_TA_664",
+      "CarComponent_FlipCar_TA_665",
+      "CarComponent_Boost_TA_665",
+      "CarComponent_Jump_TA_665",
+      "CarComponent_DoubleJump_TA_664",
+      "CarComponent_Dodge_TA_665",
+      "CarComponent_FlipCar_TA_666",
+      "CarComponent_Boost_TA_666",
+      "CarComponent_Jump_TA_666",
+      "CarComponent_Dodge_TA_666",
+      "CarComponent_DoubleJump_TA_665",
+      "CarComponent_DoubleJump_TA_666",
+      "CarComponent_Boost_TA_667",
+      "CarComponent_Jump_TA_667",
+      "CarComponent_DoubleJump_TA_667",
+      "CarComponent_Dodge_TA_667",
+      "CarComponent_FlipCar_TA_667",
+      "Ball_TA_142",
+      "Car_TA_663",
+      "Car_TA_664",
+      "Car_TA_665",
+      "Car_TA_672",
+      "CarComponent_DoubleJump_TA_674",
+      "CarComponent_Jump_TA_674",
+      "CarComponent_Dodge_TA_674",
+      "CarComponent_FlipCar_TA_674",
+      "CarComponent_Boost_TA_674",
+      "Car_TA_673",
+      "CarComponent_DoubleJump_TA_675",
+      "CarComponent_FlipCar_TA_675",
+      "CarComponent_Jump_TA_675",
+      "CarComponent_Dodge_TA_675",
+      "CarComponent_Jump_TA_676",
+      "CarComponent_Dodge_TA_676",
+      "CarComponent_Boost_TA_675",
+      "CarComponent_DoubleJump_TA_676",
+      "CarComponent_Jump_TA_677",
+      "CarComponent_Boost_TA_676",
+      "CarComponent_FlipCar_TA_676",
+      "CarComponent_Boost_TA_677",
+      "CarComponent_Jump_TA_678",
+      "CarComponent_DoubleJump_TA_677",
+      "CarComponent_Dodge_TA_677",
+      "CarComponent_FlipCar_TA_677",
+      "CarComponent_FlipCar_TA_678",
+      "CarComponent_Dodge_TA_678",
+      "CarComponent_DoubleJump_TA_678",
+      "CarComponent_Boost_TA_678",
+      "CarComponent_Jump_TA_679",
+      "CarComponent_DoubleJump_TA_679",
+      "CarComponent_Dodge_TA_679",
+      "CarComponent_FlipCar_TA_679",
+      "CarComponent_Boost_TA_679",
+      "Ball_TA_144",
+      "Car_TA_674",
+      "Car_TA_675",
+      "Car_TA_676",
+      "Car_TA_677"
+    ],
+    "class_mappings": [
+      {
+        "name": "Core.Object",
+        "stream_id": 0
+      },
+      {
+        "name": "Engine.Actor",
+        "stream_id": 22
+      },
+      {
+        "name": "TAGame.GameEvent_TA",
+        "stream_id": 34
+      },
+      {
+        "name": "TAGame.GameEvent_Team_TA",
+        "stream_id": 38
+      },
+      {
+        "name": "TAGame.GameEvent_Soccar_TA",
+        "stream_id": 53
+      },
+      {
+        "name": "Engine.Info",
+        "stream_id": 55
+      },
+      {
+        "name": "Engine.ReplicationInfo",
+        "stream_id": 56
+      },
+      {
+        "name": "Engine.PlayerReplicationInfo",
+        "stream_id": 76
+      },
+      {
+        "name": "ProjectX.PRI_X",
+        "stream_id": 77
+      },
+      {
+        "name": "TAGame.PRI_TA",
+        "stream_id": 131
+      },
+      {
+        "name": "TAGame.CameraSettingsActor_TA",
+        "stream_id": 146
+      },
+      {
+        "name": "Engine.Pawn",
+        "stream_id": 177
+      },
+      {
+        "name": "ProjectX.Pawn_X",
+        "stream_id": 178
+      },
+      {
+        "name": "TAGame.RBActor_TA",
+        "stream_id": 184
+      },
+      {
+        "name": "TAGame.Ball_TA",
+        "stream_id": 198
+      },
+      {
+        "name": "Engine.GameReplicationInfo",
+        "stream_id": 211
+      },
+      {
+        "name": "ProjectX.GRI_X",
+        "stream_id": 217
+      },
+      {
+        "name": "TAGame.GRI_TA",
+        "stream_id": 219
+      },
+      {
+        "name": "Engine.TeamInfo",
+        "stream_id": 224
+      },
+      {
+        "name": "TAGame.Team_TA",
+        "stream_id": 229
+      },
+      {
+        "name": "TAGame.Team_Soccar_TA",
+        "stream_id": 231
+      },
+      {
+        "name": "TAGame.CarComponent_TA",
+        "stream_id": 237
+      },
+      {
+        "name": "TAGame.CarComponent_Jump_TA",
+        "stream_id": 238
+      },
+      {
+        "name": "TAGame.CarComponent_Boost_TA",
+        "stream_id": 251
+      },
+      {
+        "name": "TAGame.CarComponent_DoubleJump_TA",
+        "stream_id": 253
+      },
+      {
+        "name": "TAGame.CarComponent_Dodge_TA",
+        "stream_id": 256
+      },
+      {
+        "name": "TAGame.CarComponent_FlipCar_TA",
+        "stream_id": 260
+      },
+      {
+        "name": "TAGame.Vehicle_TA",
+        "stream_id": 267
+      },
+      {
+        "name": "TAGame.Car_TA",
+        "stream_id": 279
+      },
+      {
+        "name": "TAGame.CrowdActor_TA",
+        "stream_id": 286
+      },
+      {
+        "name": "TAGame.CrowdManager_TA",
+        "stream_id": 290
+      },
+      {
+        "name": "TAGame.MatchType_Private_TA",
+        "stream_id": 292
+      },
+      {
+        "name": "TAGame.ProductAttribute_Painted_TA",
+        "stream_id": 293
+      },
+      {
+        "name": "TAGame.GameInfo_Soccar_TA",
+        "stream_id": 294
+      },
+      {
+        "name": "TAGame.VehiclePickup_TA",
+        "stream_id": 298
+      },
+      {
+        "name": "TAGame.VehiclePickup_Boost_TA",
+        "stream_id": 299
+      }
+    ],
+    "caches": [
+      {
+        "class_id": 0,
+        "parent_cache_id": 0,
+        "cache_id": 0,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 22,
+        "parent_cache_id": 0,
+        "cache_id": 21,
+        "attribute_mappings": [
+          {
+            "object_id": 1,
+            "stream_id": 0
+          },
+          {
+            "object_id": 2,
+            "stream_id": 1
+          },
+          {
+            "object_id": 3,
+            "stream_id": 2
+          },
+          {
+            "object_id": 4,
+            "stream_id": 3
+          },
+          {
+            "object_id": 5,
+            "stream_id": 4
+          },
+          {
+            "object_id": 6,
+            "stream_id": 5
+          },
+          {
+            "object_id": 7,
+            "stream_id": 6
+          },
+          {
+            "object_id": 8,
+            "stream_id": 7
+          },
+          {
+            "object_id": 9,
+            "stream_id": 8
+          },
+          {
+            "object_id": 10,
+            "stream_id": 9
+          },
+          {
+            "object_id": 11,
+            "stream_id": 10
+          },
+          {
+            "object_id": 12,
+            "stream_id": 11
+          },
+          {
+            "object_id": 13,
+            "stream_id": 12
+          },
+          {
+            "object_id": 14,
+            "stream_id": 13
+          },
+          {
+            "object_id": 15,
+            "stream_id": 14
+          },
+          {
+            "object_id": 16,
+            "stream_id": 15
+          },
+          {
+            "object_id": 17,
+            "stream_id": 16
+          },
+          {
+            "object_id": 18,
+            "stream_id": 17
+          },
+          {
+            "object_id": 19,
+            "stream_id": 18
+          },
+          {
+            "object_id": 20,
+            "stream_id": 19
+          },
+          {
+            "object_id": 21,
+            "stream_id": 20
+          }
+        ]
+      },
+      {
+        "class_id": 34,
+        "parent_cache_id": 21,
+        "cache_id": 32,
+        "attribute_mappings": [
+          {
+            "object_id": 23,
+            "stream_id": 21
+          },
+          {
+            "object_id": 24,
+            "stream_id": 22
+          },
+          {
+            "object_id": 25,
+            "stream_id": 23
+          },
+          {
+            "object_id": 26,
+            "stream_id": 24
+          },
+          {
+            "object_id": 27,
+            "stream_id": 25
+          },
+          {
+            "object_id": 28,
+            "stream_id": 26
+          },
+          {
+            "object_id": 29,
+            "stream_id": 27
+          },
+          {
+            "object_id": 30,
+            "stream_id": 28
+          },
+          {
+            "object_id": 31,
+            "stream_id": 29
+          },
+          {
+            "object_id": 32,
+            "stream_id": 30
+          },
+          {
+            "object_id": 33,
+            "stream_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 38,
+        "parent_cache_id": 32,
+        "cache_id": 35,
+        "attribute_mappings": [
+          {
+            "object_id": 35,
+            "stream_id": 32
+          },
+          {
+            "object_id": 36,
+            "stream_id": 33
+          },
+          {
+            "object_id": 37,
+            "stream_id": 34
+          }
+        ]
+      },
+      {
+        "class_id": 53,
+        "parent_cache_id": 35,
+        "cache_id": 49,
+        "attribute_mappings": [
+          {
+            "object_id": 39,
+            "stream_id": 35
+          },
+          {
+            "object_id": 40,
+            "stream_id": 36
+          },
+          {
+            "object_id": 41,
+            "stream_id": 37
+          },
+          {
+            "object_id": 42,
+            "stream_id": 38
+          },
+          {
+            "object_id": 43,
+            "stream_id": 39
+          },
+          {
+            "object_id": 44,
+            "stream_id": 40
+          },
+          {
+            "object_id": 45,
+            "stream_id": 41
+          },
+          {
+            "object_id": 46,
+            "stream_id": 42
+          },
+          {
+            "object_id": 47,
+            "stream_id": 43
+          },
+          {
+            "object_id": 48,
+            "stream_id": 44
+          },
+          {
+            "object_id": 49,
+            "stream_id": 45
+          },
+          {
+            "object_id": 50,
+            "stream_id": 46
+          },
+          {
+            "object_id": 51,
+            "stream_id": 47
+          },
+          {
+            "object_id": 52,
+            "stream_id": 48
+          }
+        ]
+      },
+      {
+        "class_id": 55,
+        "parent_cache_id": 21,
+        "cache_id": 21,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 56,
+        "parent_cache_id": 21,
+        "cache_id": 21,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 76,
+        "parent_cache_id": 21,
+        "cache_id": 38,
+        "attribute_mappings": [
+          {
+            "object_id": 57,
+            "stream_id": 21
+          },
+          {
+            "object_id": 58,
+            "stream_id": 22
+          },
+          {
+            "object_id": 59,
+            "stream_id": 23
+          },
+          {
+            "object_id": 60,
+            "stream_id": 24
+          },
+          {
+            "object_id": 61,
+            "stream_id": 25
+          },
+          {
+            "object_id": 62,
+            "stream_id": 26
+          },
+          {
+            "object_id": 63,
+            "stream_id": 27
+          },
+          {
+            "object_id": 64,
+            "stream_id": 28
+          },
+          {
+            "object_id": 65,
+            "stream_id": 29
+          },
+          {
+            "object_id": 66,
+            "stream_id": 30
+          },
+          {
+            "object_id": 67,
+            "stream_id": 31
+          },
+          {
+            "object_id": 68,
+            "stream_id": 32
+          },
+          {
+            "object_id": 69,
+            "stream_id": 33
+          },
+          {
+            "object_id": 70,
+            "stream_id": 34
+          },
+          {
+            "object_id": 71,
+            "stream_id": 35
+          },
+          {
+            "object_id": 72,
+            "stream_id": 36
+          },
+          {
+            "object_id": 73,
+            "stream_id": 37
+          },
+          {
+            "object_id": 74,
+            "stream_id": 38
+          },
+          {
+            "object_id": 75,
+            "stream_id": 39
+          }
+        ]
+      },
+      {
+        "class_id": 77,
+        "parent_cache_id": 40,
+        "cache_id": 38,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 131,
+        "parent_cache_id": 40,
+        "cache_id": 70,
+        "attribute_mappings": [
+          {
+            "object_id": 78,
+            "stream_id": 40
+          },
+          {
+            "object_id": 79,
+            "stream_id": 41
+          },
+          {
+            "object_id": 80,
+            "stream_id": 42
+          },
+          {
+            "object_id": 81,
+            "stream_id": 43
+          },
+          {
+            "object_id": 82,
+            "stream_id": 44
+          },
+          {
+            "object_id": 83,
+            "stream_id": 45
+          },
+          {
+            "object_id": 84,
+            "stream_id": 46
+          },
+          {
+            "object_id": 85,
+            "stream_id": 47
+          },
+          {
+            "object_id": 86,
+            "stream_id": 48
+          },
+          {
+            "object_id": 87,
+            "stream_id": 49
+          },
+          {
+            "object_id": 88,
+            "stream_id": 50
+          },
+          {
+            "object_id": 89,
+            "stream_id": 51
+          },
+          {
+            "object_id": 90,
+            "stream_id": 52
+          },
+          {
+            "object_id": 91,
+            "stream_id": 53
+          },
+          {
+            "object_id": 92,
+            "stream_id": 54
+          },
+          {
+            "object_id": 93,
+            "stream_id": 55
+          },
+          {
+            "object_id": 94,
+            "stream_id": 56
+          },
+          {
+            "object_id": 95,
+            "stream_id": 57
+          },
+          {
+            "object_id": 96,
+            "stream_id": 58
+          },
+          {
+            "object_id": 97,
+            "stream_id": 59
+          },
+          {
+            "object_id": 98,
+            "stream_id": 60
+          },
+          {
+            "object_id": 99,
+            "stream_id": 61
+          },
+          {
+            "object_id": 100,
+            "stream_id": 62
+          },
+          {
+            "object_id": 101,
+            "stream_id": 63
+          },
+          {
+            "object_id": 102,
+            "stream_id": 64
+          },
+          {
+            "object_id": 103,
+            "stream_id": 65
+          },
+          {
+            "object_id": 104,
+            "stream_id": 66
+          },
+          {
+            "object_id": 105,
+            "stream_id": 67
+          },
+          {
+            "object_id": 106,
+            "stream_id": 68
+          },
+          {
+            "object_id": 107,
+            "stream_id": 69
+          },
+          {
+            "object_id": 108,
+            "stream_id": 70
+          },
+          {
+            "object_id": 109,
+            "stream_id": 71
+          },
+          {
+            "object_id": 110,
+            "stream_id": 72
+          },
+          {
+            "object_id": 111,
+            "stream_id": 73
+          },
+          {
+            "object_id": 112,
+            "stream_id": 74
+          },
+          {
+            "object_id": 113,
+            "stream_id": 75
+          },
+          {
+            "object_id": 114,
+            "stream_id": 76
+          },
+          {
+            "object_id": 115,
+            "stream_id": 77
+          },
+          {
+            "object_id": 116,
+            "stream_id": 78
+          },
+          {
+            "object_id": 117,
+            "stream_id": 79
+          },
+          {
+            "object_id": 118,
+            "stream_id": 80
+          },
+          {
+            "object_id": 119,
+            "stream_id": 81
+          },
+          {
+            "object_id": 120,
+            "stream_id": 82
+          },
+          {
+            "object_id": 121,
+            "stream_id": 83
+          },
+          {
+            "object_id": 122,
+            "stream_id": 84
+          },
+          {
+            "object_id": 123,
+            "stream_id": 85
+          },
+          {
+            "object_id": 124,
+            "stream_id": 86
+          },
+          {
+            "object_id": 125,
+            "stream_id": 87
+          },
+          {
+            "object_id": 126,
+            "stream_id": 88
+          },
+          {
+            "object_id": 127,
+            "stream_id": 89
+          },
+          {
+            "object_id": 128,
+            "stream_id": 90
+          },
+          {
+            "object_id": 129,
+            "stream_id": 91
+          },
+          {
+            "object_id": 130,
+            "stream_id": 92
+          }
+        ]
+      },
+      {
+        "class_id": 146,
+        "parent_cache_id": 21,
+        "cache_id": 28,
+        "attribute_mappings": [
+          {
+            "object_id": 133,
+            "stream_id": 21
+          },
+          {
+            "object_id": 134,
+            "stream_id": 22
+          },
+          {
+            "object_id": 135,
+            "stream_id": 23
+          },
+          {
+            "object_id": 136,
+            "stream_id": 24
+          },
+          {
+            "object_id": 137,
+            "stream_id": 25
+          },
+          {
+            "object_id": 138,
+            "stream_id": 26
+          },
+          {
+            "object_id": 139,
+            "stream_id": 27
+          },
+          {
+            "object_id": 140,
+            "stream_id": 28
+          },
+          {
+            "object_id": 141,
+            "stream_id": 29
+          },
+          {
+            "object_id": 142,
+            "stream_id": 30
+          },
+          {
+            "object_id": 143,
+            "stream_id": 31
+          },
+          {
+            "object_id": 144,
+            "stream_id": 32
+          },
+          {
+            "object_id": 145,
+            "stream_id": 33
+          }
+        ]
+      },
+      {
+        "class_id": 177,
+        "parent_cache_id": 21,
+        "cache_id": 50,
+        "attribute_mappings": [
+          {
+            "object_id": 148,
+            "stream_id": 21
+          },
+          {
+            "object_id": 149,
+            "stream_id": 22
+          },
+          {
+            "object_id": 150,
+            "stream_id": 23
+          },
+          {
+            "object_id": 151,
+            "stream_id": 24
+          },
+          {
+            "object_id": 152,
+            "stream_id": 25
+          },
+          {
+            "object_id": 153,
+            "stream_id": 26
+          },
+          {
+            "object_id": 154,
+            "stream_id": 27
+          },
+          {
+            "object_id": 155,
+            "stream_id": 28
+          },
+          {
+            "object_id": 156,
+            "stream_id": 29
+          },
+          {
+            "object_id": 157,
+            "stream_id": 30
+          },
+          {
+            "object_id": 158,
+            "stream_id": 31
+          },
+          {
+            "object_id": 159,
+            "stream_id": 32
+          },
+          {
+            "object_id": 160,
+            "stream_id": 33
+          },
+          {
+            "object_id": 161,
+            "stream_id": 34
+          },
+          {
+            "object_id": 162,
+            "stream_id": 35
+          },
+          {
+            "object_id": 163,
+            "stream_id": 36
+          },
+          {
+            "object_id": 164,
+            "stream_id": 37
+          },
+          {
+            "object_id": 165,
+            "stream_id": 38
+          },
+          {
+            "object_id": 166,
+            "stream_id": 39
+          },
+          {
+            "object_id": 167,
+            "stream_id": 40
+          },
+          {
+            "object_id": 168,
+            "stream_id": 41
+          },
+          {
+            "object_id": 169,
+            "stream_id": 42
+          },
+          {
+            "object_id": 170,
+            "stream_id": 43
+          },
+          {
+            "object_id": 171,
+            "stream_id": 44
+          },
+          {
+            "object_id": 172,
+            "stream_id": 45
+          },
+          {
+            "object_id": 173,
+            "stream_id": 46
+          },
+          {
+            "object_id": 174,
+            "stream_id": 47
+          },
+          {
+            "object_id": 175,
+            "stream_id": 48
+          },
+          {
+            "object_id": 176,
+            "stream_id": 49
+          }
+        ]
+      },
+      {
+        "class_id": 178,
+        "parent_cache_id": 50,
+        "cache_id": 50,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 184,
+        "parent_cache_id": 50,
+        "cache_id": 55,
+        "attribute_mappings": [
+          {
+            "object_id": 179,
+            "stream_id": 50
+          },
+          {
+            "object_id": 180,
+            "stream_id": 51
+          },
+          {
+            "object_id": 181,
+            "stream_id": 52
+          },
+          {
+            "object_id": 182,
+            "stream_id": 53
+          },
+          {
+            "object_id": 183,
+            "stream_id": 54
+          }
+        ]
+      },
+      {
+        "class_id": 198,
+        "parent_cache_id": 55,
+        "cache_id": 68,
+        "attribute_mappings": [
+          {
+            "object_id": 185,
+            "stream_id": 55
+          },
+          {
+            "object_id": 186,
+            "stream_id": 56
+          },
+          {
+            "object_id": 187,
+            "stream_id": 57
+          },
+          {
+            "object_id": 188,
+            "stream_id": 58
+          },
+          {
+            "object_id": 189,
+            "stream_id": 59
+          },
+          {
+            "object_id": 190,
+            "stream_id": 60
+          },
+          {
+            "object_id": 191,
+            "stream_id": 61
+          },
+          {
+            "object_id": 192,
+            "stream_id": 62
+          },
+          {
+            "object_id": 193,
+            "stream_id": 63
+          },
+          {
+            "object_id": 194,
+            "stream_id": 64
+          },
+          {
+            "object_id": 195,
+            "stream_id": 65
+          },
+          {
+            "object_id": 196,
+            "stream_id": 66
+          },
+          {
+            "object_id": 197,
+            "stream_id": 67
+          }
+        ]
+      },
+      {
+        "class_id": 211,
+        "parent_cache_id": 21,
+        "cache_id": 32,
+        "attribute_mappings": [
+          {
+            "object_id": 200,
+            "stream_id": 21
+          },
+          {
+            "object_id": 201,
+            "stream_id": 22
+          },
+          {
+            "object_id": 202,
+            "stream_id": 23
+          },
+          {
+            "object_id": 203,
+            "stream_id": 24
+          },
+          {
+            "object_id": 204,
+            "stream_id": 25
+          },
+          {
+            "object_id": 205,
+            "stream_id": 26
+          },
+          {
+            "object_id": 206,
+            "stream_id": 27
+          },
+          {
+            "object_id": 207,
+            "stream_id": 28
+          },
+          {
+            "object_id": 208,
+            "stream_id": 29
+          },
+          {
+            "object_id": 209,
+            "stream_id": 30
+          },
+          {
+            "object_id": 210,
+            "stream_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 217,
+        "parent_cache_id": 32,
+        "cache_id": 37,
+        "attribute_mappings": [
+          {
+            "object_id": 212,
+            "stream_id": 32
+          },
+          {
+            "object_id": 213,
+            "stream_id": 33
+          },
+          {
+            "object_id": 214,
+            "stream_id": 34
+          },
+          {
+            "object_id": 215,
+            "stream_id": 35
+          },
+          {
+            "object_id": 216,
+            "stream_id": 36
+          }
+        ]
+      },
+      {
+        "class_id": 219,
+        "parent_cache_id": 37,
+        "cache_id": 38,
+        "attribute_mappings": [
+          {
+            "object_id": 218,
+            "stream_id": 37
+          }
+        ]
+      },
+      {
+        "class_id": 224,
+        "parent_cache_id": 21,
+        "cache_id": 24,
+        "attribute_mappings": [
+          {
+            "object_id": 221,
+            "stream_id": 21
+          },
+          {
+            "object_id": 222,
+            "stream_id": 22
+          },
+          {
+            "object_id": 223,
+            "stream_id": 23
+          }
+        ]
+      },
+      {
+        "class_id": 229,
+        "parent_cache_id": 24,
+        "cache_id": 28,
+        "attribute_mappings": [
+          {
+            "object_id": 225,
+            "stream_id": 24
+          },
+          {
+            "object_id": 226,
+            "stream_id": 25
+          },
+          {
+            "object_id": 227,
+            "stream_id": 26
+          },
+          {
+            "object_id": 228,
+            "stream_id": 27
+          }
+        ]
+      },
+      {
+        "class_id": 231,
+        "parent_cache_id": 28,
+        "cache_id": 29,
+        "attribute_mappings": [
+          {
+            "object_id": 230,
+            "stream_id": 28
+          }
+        ]
+      },
+      {
+        "class_id": 237,
+        "parent_cache_id": 21,
+        "cache_id": 24,
+        "attribute_mappings": [
+          {
+            "object_id": 234,
+            "stream_id": 21
+          },
+          {
+            "object_id": 235,
+            "stream_id": 22
+          },
+          {
+            "object_id": 236,
+            "stream_id": 23
+          }
+        ]
+      },
+      {
+        "class_id": 238,
+        "parent_cache_id": 24,
+        "cache_id": 24,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 251,
+        "parent_cache_id": 24,
+        "cache_id": 32,
+        "attribute_mappings": [
+          {
+            "object_id": 240,
+            "stream_id": 24
+          },
+          {
+            "object_id": 241,
+            "stream_id": 25
+          },
+          {
+            "object_id": 242,
+            "stream_id": 26
+          },
+          {
+            "object_id": 243,
+            "stream_id": 27
+          },
+          {
+            "object_id": 244,
+            "stream_id": 28
+          },
+          {
+            "object_id": 245,
+            "stream_id": 29
+          },
+          {
+            "object_id": 246,
+            "stream_id": 30
+          },
+          {
+            "object_id": 247,
+            "stream_id": 31
+          },
+          {
+            "object_id": 248,
+            "stream_id": 32
+          },
+          {
+            "object_id": 249,
+            "stream_id": 33
+          },
+          {
+            "object_id": 250,
+            "stream_id": 34
+          }
+        ]
+      },
+      {
+        "class_id": 253,
+        "parent_cache_id": 24,
+        "cache_id": 24,
+        "attribute_mappings": []
+      },
+      {
+        "class_id": 256,
+        "parent_cache_id": 24,
+        "cache_id": 25,
+        "attribute_mappings": [
+          {
+            "object_id": 255,
+            "stream_id": 24
+          }
+        ]
+      },
+      {
+        "class_id": 260,
+        "parent_cache_id": 24,
+        "cache_id": 26,
+        "attribute_mappings": [
+          {
+            "object_id": 258,
+            "stream_id": 24
+          },
+          {
+            "object_id": 259,
+            "stream_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 267,
+        "parent_cache_id": 55,
+        "cache_id": 60,
+        "attribute_mappings": [
+          {
+            "object_id": 262,
+            "stream_id": 55
+          },
+          {
+            "object_id": 263,
+            "stream_id": 56
+          },
+          {
+            "object_id": 264,
+            "stream_id": 57
+          },
+          {
+            "object_id": 265,
+            "stream_id": 58
+          },
+          {
+            "object_id": 266,
+            "stream_id": 59
+          }
+        ]
+      },
+      {
+        "class_id": 279,
+        "parent_cache_id": 60,
+        "cache_id": 70,
+        "attribute_mappings": [
+          {
+            "object_id": 268,
+            "stream_id": 60
+          },
+          {
+            "object_id": 269,
+            "stream_id": 61
+          },
+          {
+            "object_id": 270,
+            "stream_id": 62
+          },
+          {
+            "object_id": 271,
+            "stream_id": 63
+          },
+          {
+            "object_id": 272,
+            "stream_id": 64
+          },
+          {
+            "object_id": 273,
+            "stream_id": 65
+          },
+          {
+            "object_id": 274,
+            "stream_id": 66
+          },
+          {
+            "object_id": 275,
+            "stream_id": 67
+          },
+          {
+            "object_id": 276,
+            "stream_id": 68
+          },
+          {
+            "object_id": 277,
+            "stream_id": 69
+          },
+          {
+            "object_id": 278,
+            "stream_id": 70
+          }
+        ]
+      },
+      {
+        "class_id": 286,
+        "parent_cache_id": 21,
+        "cache_id": 26,
+        "attribute_mappings": [
+          {
+            "object_id": 281,
+            "stream_id": 21
+          },
+          {
+            "object_id": 282,
+            "stream_id": 22
+          },
+          {
+            "object_id": 283,
+            "stream_id": 23
+          },
+          {
+            "object_id": 284,
+            "stream_id": 24
+          },
+          {
+            "object_id": 285,
+            "stream_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 290,
+        "parent_cache_id": 21,
+        "cache_id": 23,
+        "attribute_mappings": [
+          {
+            "object_id": 288,
+            "stream_id": 21
+          },
+          {
+            "object_id": 289,
+            "stream_id": 22
+          }
+        ]
+      },
+      {
+        "class_id": 298,
+        "parent_cache_id": 21,
+        "cache_id": 23,
+        "attribute_mappings": [
+          {
+            "object_id": 296,
+            "stream_id": 21
+          },
+          {
+            "object_id": 297,
+            "stream_id": 22
+          }
+        ]
+      },
+      {
+        "class_id": 299,
+        "parent_cache_id": 23,
+        "cache_id": 23,
+        "attribute_mappings": []
+      }
+    ]
+  }
+}
