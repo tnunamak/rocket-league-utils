@@ -98,7 +98,7 @@ function spreadsheet (games, paths, delimiter = '\t') {
         // MVP ties are resolved alphabetically
         (b.Name < a.Name ? 1 : -1)
     }).map(player => {
-      return columns.map(column => {
+      let values = columns.map(column => {
         let prop = aliases[column]
         if (typeof prop === 'undefined') {
           prop = column
@@ -108,7 +108,11 @@ function spreadsheet (games, paths, delimiter = '\t') {
       }*/
         const value = typeof player[prop] === 'undefined' ? '' : player[prop]
         return `"${value}"`
-      }).concat(`"${path.basename(paths[i])}"`).join(delimiter)
+      })
+      if (includeFilename) {
+        values = values.concat(`"${path.basename(paths[i])}"`)
+      }
+      return values.join(delimiter)
     })
   })
 
@@ -117,7 +121,7 @@ function spreadsheet (games, paths, delimiter = '\t') {
 
 const inputDirectory = process.argv[2]
 
-module.exports = function (/*inputDirectory,*/inputFiles) {
+function parseFiles (/*inputDirectory,*/inputFiles, notifyFileCompletedFn) {
   /*Promise.all(fs.readdirSync(path.resolve(inputDirectory))*/
 
   const paths = inputFiles
@@ -130,6 +134,7 @@ module.exports = function (/*inputDirectory,*/inputFiles) {
     return memo.then(results => {
       return parse(path)
         .then(singleResult => {
+          notifyFileCompletedFn(path)
           results.push(singleResult)
           return Promise.resolve(results)
         })
@@ -142,6 +147,15 @@ module.exports = function (/*inputDirectory,*/inputFiles) {
         .map(filter)
       return spreadsheet(gameStats, paths)
     })
+}
+
+module.exports = function (inputFiles) {
+  const job = {
+    promise: parseFiles(inputFiles, () => job.numberCompleted++),
+    numberCompleted: 0
+  }
+
+  return job
 }
 
 function flatten (arrays) {

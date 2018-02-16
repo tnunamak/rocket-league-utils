@@ -6,7 +6,7 @@
   </head>
   <body>
     <p>
-      Select .replay files to generate a spreadsheet for.
+      Select .replay files to generate a spreadsheet for. On Windows, replays are normally at Documents/My Games/Rocket League/TAGame/Demos.
     </p>
     <p>
       You must have <a id="rattletrap" href="#" onclick="showRattletrap()">rattletrap</a> installed on your system, and on your shell path.
@@ -54,29 +54,37 @@
             return
           }
 
-          parse(fileNames)
-            .then(spreadsheet => {
-              const copyTextarea = document.getElementById('editor')
-              const confirmation = document.getElementById('clipboard_confirmation')
-              confirmation.style.display = ''
-              copyTextarea.value = spreadsheet
-              copyTextarea.select()
+          const copyTextarea = document.getElementById('editor')
+          const updateProcessing = (count, total) => {
+            copyTextarea.value = `Processing... ${count}/${total} complete`
+          }
 
-              bool = document.execCommand('copy')
-              if (!bool) {
-                alert('Automatic copy is unsupported by your browser.')
-              }
-            })
-            .catch(e => {
-              alert(`Reading replay files failed. Do you have rattletrap installed on your path?\n\nError:\n\n${e}`)
-            })
+          const job = parse(fileNames)
+          const processingUpdate = setInterval(() => updateProcessing(job.numberCompleted, fileNames.length), 100)
+
+          job.promise.then(spreadsheet => {
+            clearInterval(processingUpdate)
+            const confirmation = document.getElementById('clipboard_confirmation')
+            confirmation.style.display = ''
+            copyTextarea.value = spreadsheet
+            copyTextarea.select()
+
+            bool = document.execCommand('copy')
+            if (!bool) {
+              alert('Automatic copy is unsupported by your browser.')
+            }
+          })
+          .catch(e => {
+            clearInterval(processingUpdate)
+            alert(`Reading replay files failed. Do you have rattletrap installed on your path?\n\nError:\n\n${e}`)
+          })
 
 
           /*
           fs.readFile(fileName, 'utf-8', function (err, data) {
             document.getElementById("editor").value = data
           })
-          */
+           */
         })
       }
     </script>
