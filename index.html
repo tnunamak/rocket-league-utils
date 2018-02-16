@@ -10,6 +10,9 @@
     </p>
     <p>
       You must have <a id="rattletrap" href="#" onclick="showRattletrap()">rattletrap</a> installed on your system, and on your shell path.
+
+      <button id="openRattletrapFile" onclick="openRattletrapFile()">Or, select a rattletrap executable</button>
+      <div id="rattletrapPath" style="display: none"></div>
     </p>
 
     <!--
@@ -33,10 +36,26 @@
       const electron = require('electron')
       const fs = require('fs')
       const parse = require('./parse')
+      let rattletrapPath
 
       function showRattletrap (e) {
         electron.shell.openExternal('https://github.com/tfausak/rattletrap/releases/latest')
       }
+
+      function openRattletrapFile () {
+        electron.remote.dialog.showOpenDialog({
+          // TODO why doesn't this work?
+          // https://github.com/electron/electron/blob/master/docs/api/dialog.md#methods
+          filters:  { name: 'Executable', extensions: ['exe'] },
+          properties: ['openFile']
+        }, function ([fileName]) {
+          const rattletrapPathDisplay = document.getElementById('rattletrapPath')
+          rattletrapPathDisplay.innerHTML = `Using rattletrap at ${fileName}`
+          rattletrapPathDisplay.style.display = 'inherit'
+          rattletrapPath = fileName
+        })
+      }
+
 
       function openFile () {
         electron.remote.dialog.showOpenDialog({
@@ -59,7 +78,7 @@
             copyTextarea.value = `Processing... ${count}/${total} complete`
           }
 
-          const job = parse(fileNames)
+          const job = parse(fileNames, rattletrapPath)
           const processingUpdate = setInterval(() => updateProcessing(job.numberCompleted, fileNames.length), 100)
 
           job.promise.then(spreadsheet => {

@@ -9,16 +9,22 @@ const includeFilename = false
 
 const TMP_FILE = `${app.getPath('userData')}/output.json`
 
-/*async*/ function parse (filename) {
+/*async*/ function parse (filename, rattletrapPath = 'rattletrap') {
   return new Promise((resolve, reject) => {
-    cp.exec(`rattletrap --compact --input "${filename}" --output "${TMP_FILE}"`, function (error, stdout, stderr) {
+    cp.exec(`"${rattletrapPath}" --compact --input "${filename}" --output "${TMP_FILE}"`, function (error, stdout, stderr) {
       if (stderr) {
         reject(stderr)
       }
 
-      const body = fs.readFileSync(path.resolve(TMP_FILE))
+      try {
+        const body = fs.readFileSync(path.resolve(TMP_FILE))
 
-      resolve(JSON.parse(body).header.body.properties)
+        resolve(JSON.parse(body).header.body.properties)
+        fs.unlinkSync(TMP_FILE)
+      }
+      catch (e) {
+        reject('Could not read or clean up processing files, they probably failed to be created.')
+      }
     })
   })
   //const { stdout, stderr } = await exec(`${RT} decode ${filename} ${TMP_FILE}`)
@@ -121,7 +127,7 @@ function spreadsheet (games, paths, delimiter = '\t') {
 
 const inputDirectory = process.argv[2]
 
-function parseFiles (/*inputDirectory,*/inputFiles, notifyFileCompletedFn) {
+function parseFiles (/*inputDirectory,*/inputFiles, rattletrapPath, notifyFileCompletedFn) {
   /*Promise.all(fs.readdirSync(path.resolve(inputDirectory))*/
 
   const paths = inputFiles
@@ -132,7 +138,7 @@ function parseFiles (/*inputDirectory,*/inputFiles, notifyFileCompletedFn) {
   // promise resolves with.
   const resultsPromise = paths.reduce((memo, path) => {
     return memo.then(results => {
-      return parse(path)
+      return parse(path, rattletrapPath)
         .then(singleResult => {
           notifyFileCompletedFn(path)
           results.push(singleResult)
@@ -149,9 +155,9 @@ function parseFiles (/*inputDirectory,*/inputFiles, notifyFileCompletedFn) {
     })
 }
 
-module.exports = function (inputFiles) {
+module.exports = function (inputFiles, rattletrapPath) {
   const job = {
-    promise: parseFiles(inputFiles, () => job.numberCompleted++),
+    promise: parseFiles(inputFiles, rattletrapPath, () => job.numberCompleted++),
     numberCompleted: 0
   }
 
