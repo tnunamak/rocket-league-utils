@@ -5,19 +5,20 @@ const path = require('path')
 const { remote: { app } } = require('electron')
 
 //const writeFile = util.promisify(fs.writeFile)
+const includeFilename = false
 
 const TMP_FILE = `${app.getPath('userData')}/output.json`
 
 /*async*/ function parse (filename) {
   return new Promise((resolve, reject) => {
-    cp.exec(`rattletrap decode "${filename}" "${TMP_FILE}"`, function (error, stdout, stderr) {
+    cp.exec(`rattletrap --compact --input "${filename}" --output "${TMP_FILE}"`, function (error, stdout, stderr) {
       if (stderr) {
         reject(stderr)
       }
 
       const body = fs.readFileSync(path.resolve(TMP_FILE))
 
-      resolve(JSON.parse(body).header.properties)
+      resolve(JSON.parse(body).header.body.properties)
     })
   })
   //const { stdout, stderr } = await exec(`${RT} decode ${filename} ${TMP_FILE}`)
@@ -40,7 +41,7 @@ function getTeamStats (tree) {
 }
 
 function getPlayerStats (tree) {
-  let players = tree.value.PlayerStats.value.array_property
+  let players = tree.value.PlayerStats.value.array
 
   players = players.map(player => {
     // TODO
@@ -80,16 +81,22 @@ const aliases = {
 }
 
 function spreadsheet (games, paths, delimiter = '\t') {
-  const headers = columns.map(column => {
+  let headers = columns.map(column => {
     return `"${column}"`
-  }).concat('"Filename"').join(delimiter)
+  })
+
+  if (includeFilename) {
+    headers = headers.concat('"Filename"')
+  }
+
+  headers = headers.join(delimiter)
 
   const players = games.map(({ teamStats, playerStats }, i) => {
     return playerStats.sort((a, b) => {
       return (teamStats[b.Team] - teamStats[a.Team]) ||
-       (b.Score - a.Score) ||
-       // MVP ties are resolved alphabetically
-       (b.Name < a.Name ? 1 : -1)
+        (b.Score - a.Score) ||
+        // MVP ties are resolved alphabetically
+        (b.Name < a.Name ? 1 : -1)
     }).map(player => {
       return columns.map(column => {
         let prop = aliases[column]
@@ -117,17 +124,17 @@ module.exports = function (/*inputDirectory,*/inputFiles) {
     .filter(filename => !!filename.match(/\.replay$/))
     .map(f => path.resolve(/*inputDirectory,*/process.cwd, f))
 
-    // Serially parse each path and add the results to an array that this 
-    // promise resolves with.
-    const resultsPromise = paths.reduce((memo, path) => {
-      return memo.then(results => {
-        return parse(path)
-          .then(singleResult => {
-            results.push(singleResult)
-            return Promise.resolve(results)
-          })
-      })
-    }, Promise.resolve([]))
+  // Serially parse each path and add the results to an array that this 
+  // promise resolves with.
+  const resultsPromise = paths.reduce((memo, path) => {
+    return memo.then(results => {
+      return parse(path)
+        .then(singleResult => {
+          results.push(singleResult)
+          return Promise.resolve(results)
+        })
+    })
+  }, Promise.resolve([]))
 
   return resultsPromise 
     .then(results => {
